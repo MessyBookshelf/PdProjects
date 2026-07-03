@@ -1,0 +1,19 @@
+> shifting array to left
+> and "filling" with 1
+
+on bang
+
+time:
+1     | 0 0 0 1
+      |
+2     | 1 0 0 0
+      |
+3     | 1 1 0 0
+      |
+4     | 1 1 1 0
+
+dissecting task:
+
+1. fill with "1" sequencially
+
+2.
