@@ -1,0 +1,14 @@
+#N canvas 899 379 450 300 12;
+#X obj 22 265 send pd;
+#X msg 22 158 colors #000000 #C0C6CC #0000ff #ff0000;
+#X obj 22 52 loadbang;
+#X text 31 96 2 - background color;
+#X text 31 80 1 - foreground color;
+#X text 31 111 3 - selection color;
+#X text 31 129 4 - GOP color;
+#X msg 34 219 colors #000000 #ffffff #0000ff #ff0000;
+#X text 236 194 (default);
+#X text 173 136 (ado slight blue);
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 7 0 0 0;
