@@ -1,7 +1,7 @@
-#N canvas 942 594 450 300 12;
+#N canvas 946 626 450 300 12;
 #N canvas 731 379 450 250 (subpatch) 0;
 #X array Register 5 float 3;
-#A 0 0 0 0 0 0;
+#A 0 0 1 0 0 1;
 #A color 0;
 #A width 2;
 #X coords 0 1 5 -1 200 140 1;
@@ -15,7 +15,7 @@
 #X text 141 87 right: index;
 #X msg 138 42 bang;
 #X floatatom 46 106 5 0 1 0 - - - 0;
-#N canvas 1275 489 450 300 counter 1;
+#N canvas 1404 626 450 300 counter 1;
 #X obj 85 54 inlet;
 #X obj 157 122 + 1;
 #X floatatom 85 171 5 0 0 0 - - - 0;
@@ -53,9 +53,17 @@
 #X msg 14 45 0;
 #X msg 53 45 1;
 #X obj 14 68 t b f;
+#X obj 234 211 tgl 20 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 234 261 s metr;
+#X obj 138 16 r metr;
+#X floatatom 199 41 5 0 0 0 - - - 0;
+#X obj 138 137 s counter;
+#X obj 14 188 r counter;
+#X obj 234 236 metro 0.25 140 permin;
 #X connect 2 0 4 0;
 #X connect 4 0 3 0;
 #X connect 5 0 1 1;
+#X connect 5 0 19 0;
 #X connect 8 0 10 0;
 #X connect 9 0 11 1;
 #X connect 10 0 5 0;
@@ -64,3 +72,8 @@
 #X connect 13 0 14 0;
 #X connect 14 0 11 0;
 #X connect 14 1 9 0;
+#X connect 15 0 21 0;
+#X connect 17 0 8 0;
+#X connect 18 0 10 1;
+#X connect 20 0 2 0;
+#X connect 21 0 16 0;
